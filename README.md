@@ -18,6 +18,13 @@ This repository includes instructions on how to automate the deployment of a pre
 1. [OPTIONAL] Change the SQL Server Admin Login.
 1. [OPTIONAL] Change the SQL Server Admin Password.
     > Note: You do not need to know the password, the post deployment script will automatically store the secret in Key Vault and Purview will use this secret to successfully scan the Azure SQL Database.
+1. [OPTIONAL] Create the following Azure security groups and assign users / groups to these associated Microsoft Purview RBAC roles within the Governance Portal
+    > * Purview Data Source Administrators
+    > * Purview Collection Administrators
+    > * Purview Data Curators
+    > * Purview Data Readers
+    > * Purview Policy Authors
+    > * Purview Workflow Administrators
 
 ## Outcome
 
